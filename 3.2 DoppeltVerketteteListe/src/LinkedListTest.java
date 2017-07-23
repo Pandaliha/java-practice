@@ -9,20 +9,15 @@ import static org.junit.Assert.assertEquals;
 
 
 /**
-* LinkedList Tester. 
-* 
-* @author Scharab Hessan
+*
+* @author Saliha Hessan
 * 
 */
 public class LinkedListTest {
     @Rule
     public ExpectedException thrown = ExpectedException.none();
 
-    /**
-     *
-     * Method: addFirst(String value).
-     *
-     */
+
     @Test
     public void testAddFirst1() throws Exception {
         LinkedList myList = new LinkedList();
@@ -42,11 +37,6 @@ public class LinkedListTest {
     }
 
 
-    /**
-     *
-     * Method: addLast(String value)
-     *
-     */
     @Test
     public void testAddLast1() throws Exception {
         LinkedList myList = new LinkedList();
@@ -65,11 +55,7 @@ public class LinkedListTest {
         assertEquals(myList.get(1), "Hallo, ich muss das letzte Element sein!");
     }
 
-    /**
-     *
-     * Method: add(int index, String value)
-     *
-     */
+
     @Test
     public void testAdd1() throws Exception {
         LinkedList myList = new LinkedList();
@@ -122,11 +108,7 @@ public class LinkedListTest {
         myList.add(10, "Hallo!");
     }
 
-    /**
-     *
-     * Method: removeFirst()
-     *
-     */
+
     @Test
     public void testRemoveFirst1() throws Exception {
         thrown.expect(NullPointerException.class);
@@ -155,11 +137,7 @@ public class LinkedListTest {
         assertEquals(myList.getSize(), 0);
     }
 
-    /**
-    *
-    * Method: removeLast()
-    *
-    */
+
     @Test
     public void testRemoveLast1() throws Exception {
         thrown.expect(NullPointerException.class);
@@ -178,11 +156,7 @@ public class LinkedListTest {
         assertEquals(myList.get(0), "Ich nicht.");
     }
 
-    /**
-    *
-    * Method: remove(int index)
-    *
-    */
+
     @Test
     public void testRemove1() throws Exception {
         thrown.expect(NullPointerException.class);
@@ -218,11 +192,7 @@ public class LinkedListTest {
         assertEquals(myList.get(0), "Ich auch.");
     }
 
-    /**
-    *
-    * Method: getSize()
-    *
-    */
+
     @Test
     public void testGetSize1() throws Exception {
         LinkedList myList = new LinkedList();
