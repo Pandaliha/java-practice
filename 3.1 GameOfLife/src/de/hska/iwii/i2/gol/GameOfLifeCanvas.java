@@ -35,7 +35,7 @@ public class GameOfLifeCanvas extends Canvas {
 			cellWidth = Math.min(cellWidth, cellHeight);
 			cellHeight = cellWidth;
 
-			gc.setStroke(Color.BLACK);
+			gc.setStroke(Color.BLACK); 
 			gc.setLineWidth(1.0);
 
 			for (int x = 0; x < currentStartGeneration.length + 1; x++) {
