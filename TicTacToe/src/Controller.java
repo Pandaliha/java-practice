@@ -38,14 +38,14 @@ public class Controller implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        Value currentPlayer = view.getCurrentPlayerValue(); //ustala znak gracza w trakcie wciśnięcia
+        Value currentPlayer = view.getCurrentPlayerValue(); 
 
-        if (Arrays.asList(view.knobs).contains(e.getSource()) && currentPlayer != null) {//jeśli wciśnięto pole gry i ustawiony był gracz
+        if (Arrays.asList(view.knobs).contains(e.getSource()) && currentPlayer != null) {
             Integer knobIndex = Arrays.asList(view.knobs).indexOf((JButton)e.getSource());
-            ((JButton) e.getSource()).setText(view.getCurrentPlayerString()); //Nastawia X lub O na przycisku
+            ((JButton) e.getSource()).setText(view.getCurrentPlayerString()); 
             view.pack();
-            ((JButton) e.getSource()).setEnabled(false); //Dezaktywuje przycisk
-            if(!addChoice(knobIndex, currentPlayer)) view.changePlayer();//Przekazuje index elementu w tablicy i ustawiony znak
+            ((JButton) e.getSource()).setEnabled(false); 
+            if(!addChoice(knobIndex, currentPlayer)) view.changePlayer();]
         } else if(e.getSource().equals(view.newGame)) {
             this.view.dispose();
             this.view = new View();
