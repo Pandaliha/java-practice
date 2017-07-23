@@ -1,7 +1,7 @@
 package aufgabe_3_3_2_paint;
 
 /**
- *  @author Scharab Hessan
+ *  @author Saliha Hessan
  */
 public interface myNode extends Cloneable {
     /**
