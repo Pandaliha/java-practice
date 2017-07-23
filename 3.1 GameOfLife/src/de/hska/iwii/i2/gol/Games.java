@@ -1,6 +1,6 @@
 package de.hska.iwii.i2.gol;
 
-/**
+/** 
  * Diese Klasse kapselt einige vordefinierte Startgenerationen
  * fuer das Game of Life.
  * @author Holger Vogelsang
