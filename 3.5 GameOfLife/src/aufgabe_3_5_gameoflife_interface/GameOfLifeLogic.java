@@ -88,4 +88,4 @@ public class GameOfLifeLogic implements Logic {
         return activeNeighbours;
     }
 
-}
+} 
