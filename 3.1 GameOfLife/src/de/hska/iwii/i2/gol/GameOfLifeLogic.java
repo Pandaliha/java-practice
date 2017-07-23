@@ -4,7 +4,7 @@ package de.hska.iwii.i2.gol;
  * als zyklisch geschlossen betrachtet.
  *
  * @author Holger Vogelsang
- * @author Scharab Hessan
+ * @author Saliha Hessan
  */
 public class GameOfLifeLogic {
 
