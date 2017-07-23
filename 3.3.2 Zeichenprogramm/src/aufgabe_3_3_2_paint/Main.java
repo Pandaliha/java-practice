@@ -3,7 +3,7 @@ package aufgabe_3_3_2_paint;
 import javafx.application.Application;
 
 /**
- * @author Scharab Hessan
+ * @author Saliha Hessan
  */
 public class Main {
     public static void main (String args[]) {
