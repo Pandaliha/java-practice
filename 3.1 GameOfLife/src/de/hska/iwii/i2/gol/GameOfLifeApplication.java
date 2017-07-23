@@ -36,7 +36,7 @@ public class GameOfLifeApplication extends Application {
 	 */
 	public static final Color BACKGROUND_COLOR = new Color(230.0 / 255.0, 230.0 / 255.0, 230.0 / 255.0, 1.0);
 	
-	/**
+	/** 
 	 * Standardfarbe einer Zelle.
 	 */
 	public static final Color DEFAULT_CELL_COLOR = new Color(80.0 / 255.0,  80.0 / 255.0, 230.0 / 255.0, 1.0);
