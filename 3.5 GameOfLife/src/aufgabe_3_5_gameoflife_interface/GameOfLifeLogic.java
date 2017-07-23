@@ -30,7 +30,7 @@ public class GameOfLifeLogic implements Logic {
     @Override
     public boolean isCellAlive(int x, int y) {
         if (x >= 0 && y >= 0 && x < population.length && y < population[x].length) {
-            return population[x][y];
+            return population[x][y]; 
         }
         return false;
     }
