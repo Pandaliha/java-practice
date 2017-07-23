@@ -32,8 +32,8 @@ public class Games {
             {false, false, false, false, false, false, false, false, false, false},
             {false, false, false, false, false, false, false, false, false, false},
             {false, false, false, false, false, false, false, false, false, false}
-    };
-
+    }; 
+  
     public static final boolean[][] BLINKER2 = new boolean[][]{
             {false, false, false, false, false, false, false, false, false, false},
             {false, false, false, false, false, false, false, false, false, false},
