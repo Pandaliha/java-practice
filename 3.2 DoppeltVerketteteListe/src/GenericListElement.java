@@ -1,7 +1,7 @@
 
 
 /**
- * @author Scharab Hessan
+ * @author Saliha Hessan
  */
 public class GenericListElement<E> {
     private E value;
