@@ -3,7 +3,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 /**
- *  @author Scharab Hessan
+ *  @author Saliha Hessan
  */
 public class myRectangle extends Rectangle implements myShape {
 
