@@ -31,7 +31,7 @@ public interface DrawingListener extends EventListener {
     /**
      * Die Figur an der mit <code>pos</code> gekennzeichneten Stelle
      * soll verschoben werden.
-     * @param node Zu verschiebende Figure.
+     * @param node Zu verschiebende Figure. 
      * @param xPos X-Position des Mauszeigers waehrend des Klicks. 
      * @param yPos y-Position des Mauszeigers waehrend des Klicks. 
      */
