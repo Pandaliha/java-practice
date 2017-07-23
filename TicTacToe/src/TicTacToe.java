@@ -1,6 +1,6 @@
 /**
  * 
- * @author Pandaliha
+ * @author Saliha
  */
 public class TicTacToe{
     public static void main(String[] args) {
