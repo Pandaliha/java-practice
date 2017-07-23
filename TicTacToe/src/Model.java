@@ -1,5 +1,8 @@
 import java.time.temporal.ValueRange;
-
+/**
+ * 
+ * @author Pandaliha
+ */
 public class Model {
     
     int[][] board = new int[3][3];
