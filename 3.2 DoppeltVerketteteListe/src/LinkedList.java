@@ -1,24 +1,17 @@
 
 
 /**
- * @author Scharab Hessan
+ * @author Saliha Hessan
  */
 public class LinkedList {
     private LinkedListElement first;
     private LinkedListElement last;
     private int size;
 
-    /**
-     *
-     */
     public LinkedList() {
     }
 
-    /**
-     * Trägt das Element vorne in die Liste ein.
-     *
-     * @param value Der zu speichernde String.
-     */
+
     public void addFirst(String value) {
         LinkedListElement el = new LinkedListElement(value);
         if (size == 0) {
@@ -32,11 +25,7 @@ public class LinkedList {
         size++;
     }
 
-    /**
-     * Hängt das Element hinten an die Liste an.
-     *
-     * @param value Der zu speichernde String.
-     */
+
     public void addLast(String value) {
         LinkedListElement el = new LinkedListElement(value);
         if (size == 0) {
@@ -50,12 +39,6 @@ public class LinkedList {
         size++;
     }
 
-    /**
-     * Fügt das Element am angegebenen Index in die Liste ein.
-     *
-     * @param index Stelle an der das Element eingefügt werden soll.
-     * @param value Der zu speichernde String.
-     */
     public void add(int index, String value) {
         assert index >= 0 : "Index kleiner 0";
         assert index <= size : "Index zu groß";
@@ -78,12 +61,7 @@ public class LinkedList {
         }
     }
 
-    /**
-     * Liest den Wert am übergebenen Index aus.
-     *
-     * @param index Stelle des zurückzugebenden Elements.
-     * @return String
-     */
+
     public String get(int index) {
         assert index >= 0 : "Index kleiner 0";
         assert index < size : "Index zu groß";
@@ -93,10 +71,7 @@ public class LinkedList {
         return tmp.getValue();
     }
 
-    /**
-     * Löscht das erste Element und gibt dessen Wert zurück.
-     * @return Gelöschter String an erster Stelle.
-     */
+
     public String removeFirst() {
         assert size > 0 : "Liste ist schon leer!";
 
@@ -116,10 +91,7 @@ public class LinkedList {
         return value;
     }
 
-    /**
-     * Löscht das letzte Element und gibt dessen Wert zurück.
-     * @return Gelöschter String an letzter Stelle.
-     */
+
     public String removeLast() {
         assert size > 0 : "Liste ist schon leer!";
         String value = last.getValue();
@@ -137,11 +109,6 @@ public class LinkedList {
         return value;
     }
 
-    /**
-     * Löscht das Element am angegebenen Index und gibt den darin gespeicherten Wert zurück.
-     * @param index Stelle des zu löschenden Elements.
-     * @return String an der gegebenen Stelle.
-     */
     public String remove(int index) {
         assert index >= 0 : "Index kleiner 0";
         assert index < size : "Index zu groß";
@@ -161,19 +128,10 @@ public class LinkedList {
         }
     }
 
-    /**
-     * Gibt die Anzahl der Elemente der Liste zurück.
-     * @return Anzahl der Elemente.
-     */
     public int getSize() {
         return size;
     }
 
-    /**
-     * Gibt das Element an der gegebenen Stelle zurück.
-     * @param index Stelle des gewünschten Elements.
-     * @return Element an der Stelle.
-     */
     private LinkedListElement goToIndex(int index) {
         LinkedListElement tmp = first;
         for (int i = 1; i <= index; i++) {
@@ -182,9 +140,6 @@ public class LinkedList {
         return tmp;
     }
 
-    /**
-     * Gibt die Liste in der Konsole aus.
-     */
     public void printList() {
         assert size > 0 : "Liste ist leer!";
 
