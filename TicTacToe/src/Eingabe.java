@@ -39,5 +39,5 @@ public class Eingabe {
 		} catch (NumberFormatException e) {
 			return 0;
 		}	
-	}
+	} 
 }
