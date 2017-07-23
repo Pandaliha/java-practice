@@ -4,7 +4,7 @@ package aufgabe_3_5_gameoflife_interface;
  * als zyklisch geschlossen betrachtet.
  *
  * @author Holger Vogelsang
- * @author Scharab Hessan
+ * @author Saliha Hessan
  */
 public class GameOfLifeLogic implements Logic {
 
