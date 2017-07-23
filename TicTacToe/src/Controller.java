@@ -4,10 +4,6 @@ import java.awt.event.ActionListener;
 import java.util.Arrays;
 import javax.swing.JButton;
 
-/**
- *
- * @author mateusz
- */
 public class Controller implements ActionListener{
     Model model;
     View view;
