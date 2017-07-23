@@ -1,7 +1,7 @@
 import java.time.temporal.ValueRange;
 /**
  * 
- * @author Pandaliha
+ * @author Saliha
  */
 public class Model {
     
