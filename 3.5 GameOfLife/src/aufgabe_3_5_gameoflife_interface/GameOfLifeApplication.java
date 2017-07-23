@@ -34,7 +34,7 @@ public class GameOfLifeApplication extends Application {
 	 */
 	private GameOfLifeCanvas golCanvas;
 
-	/**
+	/** 
 	 * Referenz auf das Spiel des Benutzers.
 	 */
 	private static Logic gol;
