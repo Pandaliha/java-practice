@@ -21,23 +21,20 @@ class View extends JFrame{
 
     public void initComponents(){
         this.knobs = new JButton[9];
-        //TODO: Czy ini kazdego elementu jest potrzebne
         for (int i = 0;i<this.knobs.length;i++) {
             this.knobs[i] = new JButton(" ");
 
         }
         this.indicator = new JLabel("X");
-        this.newGame = new JButton("←");// DEADLINE
+        this.newGame = new JButton("←");
         this.newGame.setEnabled(false);
 
     }
 
     private void setLayout(){
-        /*Tworze i ustawiam LayoutManagera'a*/
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
 
-        /*Automatyczne przestrzenie między komponentami*/
        layout.setAutoCreateGaps(true);
        layout.setAutoCreateContainerGaps(true);
 
@@ -84,7 +81,7 @@ class View extends JFrame{
     }
 
     public void winGame() {
-        this.indicator.setText(getCurrentPlayerString() + " wygrał!");
+        this.indicator.setText(getCurrentPlayerString() + " won!");
         for(JButton knob : this.knobs) {
             knob.setEnabled(false);
         }
