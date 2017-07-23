@@ -32,7 +32,7 @@ public class myEllipse extends Ellipse implements myShape {
     }
 
     @Override
-    public void setBorderColor(Color color) {
+    public void setBorderColor(Color color) { 
         this.setStroke(color);
     }
 
