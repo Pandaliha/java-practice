@@ -64,7 +64,7 @@ public class MainWindow extends Application {
     private ToggleGroup typeGroup;
     private ScrollPane scrollPane;
     
-    private Scene scene;
+    private Scene scene; 
     private static transient Pane mainPanel;
     private static transient boolean horizontalToolBar = true;
 
