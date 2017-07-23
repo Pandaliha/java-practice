@@ -4,7 +4,7 @@ import javafx.scene.Group;
 import javafx.scene.Node;
 
 /**
- * @author Scharab Hessan
+ * @author Saliha Hessan
  */
 public class myGroup extends Group implements myNode {
 
