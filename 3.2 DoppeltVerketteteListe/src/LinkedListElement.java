@@ -1,17 +1,14 @@
                                                                                                                               
 
 /**
- *@author Scharab Hessan
+ *@author Saliha Hessan
  */
 public class LinkedListElement {
     private String value;
     private LinkedListElement next;
     private LinkedListElement prev;
 
-    /**
-     *Übergibt ein Element mit einem Wert.
-     *@param value der übergebene Wert
-     */
+
     public LinkedListElement(String value) {
         this.value = value;
     }
