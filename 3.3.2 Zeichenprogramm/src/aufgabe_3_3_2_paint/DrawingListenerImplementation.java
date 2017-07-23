@@ -1,7 +1,6 @@
 package aufgabe_3_3_2_paint;
 
 import javafx.animation.FadeTransition;
-//import javafx.animation.RotateTransition;
 import javafx.scene.Node;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Shape;
@@ -10,7 +9,7 @@ import javafx.util.Duration;
 import java.util.*;
 
 /**
- * @author Scharab Hessan
+ * @author Saliha Hessan
  */
 public class DrawingListenerImplementation implements DrawingListener {
     private double xStart, yStart;
@@ -42,12 +41,10 @@ public class DrawingListenerImplementation implements DrawingListener {
                 figure = new myLine(xStart, yStart, xStart, yStart);
                 break;
         }
-        //Random Color
         Random rand = new Random();
         double r = rand.nextDouble();
         double g = rand.nextDouble();
         double b = rand.nextDouble();
-        // TODO nullpointerex bei leeren figuren
         figure.setFillColor(new Color(r, g, b, 1));
 
         canvas.getChildren().add((Shape) figure);
@@ -72,7 +69,7 @@ public class DrawingListenerImplementation implements DrawingListener {
 
     @Override
     public void workMoveFigure(Node node, double xPos, double yPos) {
-        if (node instanceof DrawPane) return; //Klicke auf Zeichenfläche nicht beachten
+        if (node instanceof DrawPane) return; 
 
         while (node.getParent().getClass() == myGroup.class) {
             node = node.getParent();
@@ -100,14 +97,6 @@ public class DrawingListenerImplementation implements DrawingListener {
         if (!disableClick &&
                 node.getBoundsInParent().getMinX() != merkeX &&
                 node.getBoundsInParent().getMinY() != merkeY) {
-//            RotateTransition rotate = new RotateTransition(Duration.millis(500), node);
-//            rotate.setByAngle(360);
-//            rotate.setCycleCount(1);
-//            rotate.setAutoReverse(false);
-//            rotate.setOnFinished(event -> disableClick = false);
-//
-//            rotate.play();
-
             disableClick = true;
         }
     }
@@ -120,11 +109,9 @@ public class DrawingListenerImplementation implements DrawingListener {
             clearSelected();
         }
 
-        //Parent Gruppe holen
         while (node.getParent().getClass() == myGroup.class) {
             node = node.getParent();
         }
-        //Auswahl treffen
         if (shiftPressed) {
             node.setOpacity(0.5);
             selected.add((myNode) node);
@@ -222,7 +209,6 @@ public class DrawingListenerImplementation implements DrawingListener {
             tmp.add(child);
         }
         for(myNode s : selected) {
-            // if indexof-1 == size return
             try {
                 Collections.swap(tmp, tmp.indexOf(s), (tmp.indexOf(s) + 1));
             } catch (IndexOutOfBoundsException e) {
@@ -282,7 +268,6 @@ public class DrawingListenerImplementation implements DrawingListener {
 
     @Override
     public boolean isGroupSelected() {
-        //Wenn nur ein Element ausgewählt ist und dieses eine Gruppe ist
         return (selected.size() == 1 && selected.get(0).getClass() == myGroup.class);
     }
 
