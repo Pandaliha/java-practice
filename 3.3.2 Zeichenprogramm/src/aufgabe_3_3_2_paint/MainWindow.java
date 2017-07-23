@@ -1,7 +1,7 @@
 
 package aufgabe_3_3_2_paint;
 
-import java.util.ResourceBundle;
+import java.util.ResourceBundle; 
 
 import javafx.application.Application;
 import javafx.application.Platform;
