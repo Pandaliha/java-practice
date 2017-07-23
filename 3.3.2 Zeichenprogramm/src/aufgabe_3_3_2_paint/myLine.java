@@ -4,7 +4,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 
 /**
- *  @author Scharab Hessan
+ *  @author Saliha Hessan
  */
 public class myLine extends Line implements myShape {
 
